@@ -138,6 +138,7 @@ const ListContanier = ({ boardId, data }: Props) => {
             {orderdData.map((list, i) => (
               <ListItem key={list.id} index={i} data={list} />
             ))}
+             {provided.placeholder}
             <ListForm />
             <div className="flex-shrink-0 w-1" />
           </ol>
